@@ -1,5 +1,4 @@
 import Img from "../assets/banner.jpg";
-import Avatar from "../assets/Logo.png";
 
 type ArticleCardProps = {
   data: {

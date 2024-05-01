@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 import authentication from "../middlewares/authentication";
 
 
-router.get("/", async (req, res) => {
+router.get("/", authentication ,async (req, res) => {
     try {
         const posts = await prisma.post.findMany();
         res.json(posts);   

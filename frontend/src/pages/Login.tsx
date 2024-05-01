@@ -11,7 +11,7 @@ const Login = () => {
   const handlelogin = async () => {
     try {
       const res = await fetch(
-        `http://localhost:3000/api/auth/login`,
+        `https://brainopbackend.vercel.app/api/auth/login`,
         {
           method: "POST",
           headers: {

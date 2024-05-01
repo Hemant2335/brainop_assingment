@@ -15,7 +15,7 @@ const Homepage = () => {
   const navigate = useNavigate();
   const fetchdata = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/post/" ,{
+      const response = await fetch("https://brainopbackend.vercel.app/api/post" ,{
         method : "GET",
         headers : {
           "Content-Type" : "application/json",
