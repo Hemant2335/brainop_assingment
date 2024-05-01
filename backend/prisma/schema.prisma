@@ -21,3 +21,11 @@ model User {
   password String
   profile  String   @default("https://res.cloudinary.com/dri5u2nqb/image/upload/v1713511395/zrtp9p7eote4ixokmwjx.jpg")
   }
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
